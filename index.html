@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  
-  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <title>D/L Toggle</title>
 </head>
 <body>
-<!--Horizontal Nav Bar-->
-  <nav class="nav-primary">
-    <div class="button-toggle" onclick= "toggleNav()"></div>
-      <ul>
-        <li><a href="#">Main</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-        <li><a href="#">Page 4</a></li>
-      </ul>
-  </nav>
+  <div>
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label">
+      <i class="fas fa-flushed"></i>
+      <i class="fas fa-smile-beam"></i>
+     
+      <div class="ball"></div>
+    </label>
+  </div>
+  
+  <h1>How do I feel about Javascript Today?</h1>
+  
 
-<!--Side bar for JS-->
-  <aside class="nav-sidebar">
-    <ul>
-      <li><span>Fan Favourites</span></li>
-      <li><a href="#">Sam</a></li>
-      <li><a href="#">Dean</a></li>
-      <li><a href="#">Castiel</a></li>
-      <li><a href="#">Charlie</a></li>
-    </ul>
-  </aside>
-
-</body>
-
-<script src="script.js"></script>
-
+  </body>
+  <script src="script.js"></script>
 </html>

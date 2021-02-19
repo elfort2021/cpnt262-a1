@@ -1,115 +1,69 @@
-* { 
-  margin: 0; 
-  padding: 0;  
+* {
+  box-sizing: border-box;
 }
 
- body { 
-  background-color: beige;
-} 
-
-.nav-primary { 
-  display: flex; 
-  flex-wrap: wrap; 
-  background-color: white;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+  background-color: #0099FF;
+  font-family: 'Bebas Neue', cursive;
   
-  position: fixed; 
-  top: 0;
-   
-  width: 100%; 
-  height: 50px; 
-  z-index: 1000; 
-  
-  } 
-  
-.button-toggle { 
-  width: 50px; 
-  height: 50px;
-  background-color: gray;
-
-
-  background-image: url("/assets/hbm.png");
-  background-repeat: no-repeat; 
-  background-size: 40%; 
-  background-position: center;
-  cursor: pointer; 
-}
-.button-toggle:hover { 
-  opacity: 0.5;
-
-}
- 
-.nav-primary ul {
-  display: flex; 
-  flex-wrap: wrap;
-  padding-left: 20px; 
-}
-
-.nav-primary ul li {
- list-style: none;
- line-height: 50px; 
-}
-
-.nav-primary ul li a {
-  display: block; 
-  height: 100%; 
-  padding: 0 10px; 
-  text-transform: uppercase;
-  text-decoration: none; 
-  color: #111; 
-
-  /* import font family- dont forget ding dong */
-}
-
-/* Sidebar Styling */ 
-
-.nav-sidebar { 
-  position: fixed; 
-  left: 0; 
-  bottom: 0; 
-
-  width: 40px; 
-  height: calc(100vh - 50px);
-  padding: 0 5px; 
-
-  background-color: #1b1b1b; 
-  z-index: 100;
 
 }
 
-.nav-sidebar ul { 
-  padding-top: 20px;
-  overflow: hidden; 
-  visibility: hidden;
-
-
-
-}
-.nav-sidebar ul li { 
-  line-height: 50px;
-  list-style: none; 
-
+body.dark {
+  background-color: #292C35;
 }
 
-.nav-sidebar ul li span, .nav-sidebar ul li a { 
-  display: block; 
-  height: 50px; 
-  padding: 0 5px;
-  text-decoration: none; 
-  text-transform: uppercase; 
-
-  color: #ffffff; 
-  white-space: nowrap;
-  /*font again*/
-
-  opacity: 0; 
-
+.checkbox {
+  opacity: 0;
+  position: absolute;
 }
-.nav-sidebar ul li a:hover { 
-  background-color: #222;
 
+.checkbox:checked + .label .ball {
+  transform: translateX(23px);
 }
 
 
+.fa-smile-beam {
+  color: #f1c40f;
+}
+
+.fa-flushed {
+  color: blue;
+}
 
 
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50px;
+  height: 26px;
+  width: 50px;
+  position: relative;
+
+  background-color: #111;
+  transform: scale(1.3);
+
+
+}
+
+.ball {
+  position: absolute;
+  background-color: #33FFBD;
+  height: 22px;
+  width: 22px;
+  top: 2px;
+  left: 2px;
+  border-radius: 50px;
+  transition: transform 0.2s linear;
+
+
+}
 
