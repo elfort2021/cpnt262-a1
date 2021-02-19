@@ -7,9 +7,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   height: 100vh;
   margin: 0;
   transition: background 0.2s linear;
+
   background-color: #0099FF;
   font-family: 'Bebas Neue', cursive;
   
@@ -26,7 +28,7 @@ body.dark {
 }
 
 .checkbox:checked + .label .ball {
-  transform: translateX(23px);
+  transform: translateX(24px);
 }
 
 
@@ -35,7 +37,7 @@ body.dark {
 }
 
 .fa-flushed {
-  color: blue;
+  color: #0A06B5;
 }
 
 
@@ -43,25 +45,31 @@ body.dark {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-radius: 50px;
+  position: relative;
+  
   height: 26px;
   width: 50px;
-  position: relative;
+  
 
   background-color: #111;
+  border-radius: 50px;
+
   transform: scale(1.3);
-
-
+ /*changing size of toggle*/ 
+ 
 }
 
 .ball {
   position: absolute;
-  background-color: #33FFBD;
+  
   height: 22px;
   width: 22px;
   top: 2px;
   left: 2px;
+
   border-radius: 50px;
+  background-color: #33FFBD;
+
   transition: transform 0.2s linear;
 
 

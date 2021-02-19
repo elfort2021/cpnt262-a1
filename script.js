@@ -1,3 +1,4 @@
+'use strict'
 
 
 const checkbox = document.getElementById('checkbox');
