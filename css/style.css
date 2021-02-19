@@ -101,6 +101,8 @@
   white-space: nowrap;
   /*font again*/
 
+  opacity: 0; 
+
 }
 .nav-sidebar ul li a:hover { 
   background-color: #222;
